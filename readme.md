@@ -12,6 +12,7 @@ This is markdown repository for personal notes on certain topics, mostly coding 
 ## HTML
 
 ## Git
+- [Git quick reference](git/git.md)
 
 ## ffmpeg
 - [Video Concatenation](ffmpeg/ffmpeg.md)
