@@ -14,4 +14,4 @@ This is markdown repository for personal notes on certain topics, mostly coding 
 ## Git
 
 ## ffmpeg
-- [Video Concatenation](ffpmpeg/ffmpeg.md)]
+- [Video Concatenation](ffmpeg/ffmpeg.md)
