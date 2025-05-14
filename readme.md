@@ -6,7 +6,8 @@ This is markdown repository for personal notes on certain topics, mostly coding 
 ## Python
 
 ## Javascripts
-
+- [Javascript](javascript/javascript.md)
+- 
 ## CSS
 
 ## HTML
