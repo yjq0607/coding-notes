@@ -17,3 +17,8 @@ This is markdown repository for personal notes on certain topics, mostly coding 
 
 ## ffmpeg
 - [Video Concatenation](ffmpeg/ffmpeg.md)
+
+
+## Misc
+- [Currying and base conversion](misc/currying_function_base_conversion)
+
