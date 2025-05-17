@@ -85,6 +85,11 @@ Compare same file at different commit (eg update branch vs master branch with on
 git diff master_branch~1 update_branch index.html
 ```
 
+### Two different commits
+Compare two different commits on a certain file
+```
+git diff <commit 1 short hash> <commit 2 short hash> <file>
+```
 
 
 ## Authenitcation
