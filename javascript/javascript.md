@@ -8,14 +8,14 @@
 |can be re-declared|cannot be re-declared|
 
 Block scoped: cannot not be accessed in upper `block`, ie
-```
+```javascript
 if (true) {
     let i = 0;
 } 
 console.log(i); // result in error with "i" not defined
 ```
 `For` loop declaration also considers the variable inside the block
-```
+```javascript
 for (let i = 0; i < 10; i++) {
     
 }
@@ -66,3 +66,38 @@ Variables can be swapped with array parentheses
 let a = 'a', b = 'b';
 [a, b] = [b, a];
 ```
+
+## Singleton
+`Singleton` means only allowing one instance to be instantiated and the constructor governs the logic to make sure only one instance is allowed
+```javascript
+function standaloneFunction() {
+    console.log("The class has been instantiated successfully");
+}
+
+
+class MySingletonClass {
+    static #instance;                                                   // declare a static private field
+    constructor(name) {
+        if (MySingletonClass.#instance) {                               // if the static private field is not empty, it means the class has been instantiated once before
+            console.warn("An instance has already been initialised");   // Give a console warning when the class has been instantiated before
+            return MySingletonClass.#instance;                          // this line will return previously instantiated instance, halting the rest of the constructor "script"
+        }
+        MySingletonClass.#instance = this;
+        this.name = name;
+        this.age = 23;
+        this.myClassMethod();                                           // this will only be executed if the class is instantiated the first time
+    }
+    myClassMethod = standaloneFunction;                                 // an outer function can become a class method this way
+    lastname = "Griffins";  
+}
+
+
+const a = new MySingletonClass("Peter");                                // console return: "The class has been instantiated successfully"
+const b = new MySingletonClass("Mary");                                 // console warns: "An instance has already been initialised"
+
+
+console.log(a);                                                         // MySingletonClass {lastname: 'Griffins', name: 'Peter', age: 23, myClassMethod: ƒ}
+console.log(b);                                                         // MySingletonClass {lastname: 'Griffins', name: 'Peter', age: 23, myClassMethod: ƒ}
+console.log(a === b);                                                   // true
+```
+This implmentation is inspired by [UtkarshPramodGupta](https://stackoverflow.com/a/59646297) on StackOverflow. Also see MDN documentation on [Class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes).
