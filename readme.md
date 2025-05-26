@@ -19,6 +19,9 @@ This is markdown repository for personal notes on certain topics, mostly coding 
 - [Video Concatenation](ffmpeg/ffmpeg.md)
 
 
+## Regex
+- [Regex](regex/regex.md)
+
 ## Misc
 - [Currying and base conversion](misc/currying_function_base_conversion)
 
