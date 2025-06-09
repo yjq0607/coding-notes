@@ -9,6 +9,7 @@ This is markdown repository for personal notes on certain topics, mostly coding 
 - [Javascript](javascript/javascript.md)
 - 
 ## CSS
+- [CSS](css/css.md)
 
 ## HTML
 
