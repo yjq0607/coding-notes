@@ -35,3 +35,16 @@ Reference table[^1]:
 [^1]: A is the expression that would be captured while B would not be captured
 [^2]: Pattern A if B exists after A, ie `AB`.
 [^3]: Pattern A if B does not exists in front of A, ie `BA` would not be a match.
+
+
+
+
+## Metecharacter ref
+| char | Explain | Opposite char |
+| :---: | :---: | :---: |
+| \w | [a-zA-Z0-9_] | \W |
+| \d | [0-9] | \d |
+| \s | all space like char | \S |
+| \b | beginning of word[^4]  | \B |
+
+[^4]: /\bLO/ searches for pattern with `LO` at the beginning
