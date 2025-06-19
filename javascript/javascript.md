@@ -62,7 +62,7 @@ for (start = new Date().getTime(), i = 0; (new Date().getTime() - start) < 5000;
 }
 ```
 
-See the script [here](##customRange) to see how a `for` loop can be applied to `generator` function.
+See the script [here](#customRange) to see how a `for` loop can be applied to `generator` function.
 
 ## Swapping variables
 Variables can be swapped with array parentheses
