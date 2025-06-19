@@ -26,6 +26,7 @@ print(r)              # range(10, 20, 2)
 
 As a practice, I only have written a generator version for exercise.
 
+> [!NOTE]
 > `r` is a `float`, where `math.ceil(r)` is similar to the `range.count`
 
 See [script](crange.py).
@@ -33,7 +34,7 @@ See [script](crange.py).
 
 ## Javascript
 
-Please refer [here](..\..\javascript\javascript.md#customRange).
+Please refer [here](../../javascript/javascript.md#customRange).
 
 
 ## C
