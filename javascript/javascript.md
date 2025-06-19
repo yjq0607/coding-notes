@@ -6,6 +6,9 @@
 |:---:|:---:|
 |function scoped|block scoped|
 |can be re-declared|cannot be re-declared|
+| declaring `var` becomes a attribute of `window`[^2] | identifier only |
+
+[^2]: `var x;` you can access `x` as `window.x`
 
 Block scoped: cannot not be accessed in upper `block`, ie
 ```javascript
@@ -59,6 +62,7 @@ for (start = new Date().getTime(), i = 0; (new Date().getTime() - start) < 5000;
 }
 ```
 
+See the script [here](##customRange) to see how a `for` loop can be applied to `generator` function.
 
 ## Swapping variables
 Variables can be swapped with array parentheses
@@ -101,3 +105,15 @@ console.log(b);                                                         // MySin
 console.log(a === b);                                                   // true
 ```
 This implmentation is inspired by [UtkarshPramodGupta](https://stackoverflow.com/a/59646297) on StackOverflow. Also see MDN documentation on [Class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_classes).
+
+
+
+## customRange
+
+An exercise code snippet has been written for practising purpose (mostly for the LOL) [here](crange.js).
+
+Below provides a snippet how a `for` progresses through the generator function
+```javascript
+for (c = range.next(); !c.done; c = range.next()) { }
+```
+
